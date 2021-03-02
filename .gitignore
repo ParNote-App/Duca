@@ -18,8 +18,4 @@ desktop.ini
 
 .directory
 
-pano/view/common/node_modules
-pano/vendor/
-
-pano/config/config.json
-pano/PanoLocalDB.sqlite
+config.json
