@@ -24,8 +24,8 @@ PHP
 Clone this repository.
 
 ```bash
-git clone --recursive https://github.com/ParNote-App/ParNote.git
-cd ParNote
+git clone --recursive https://github.com/ParNote-App/DUCA.git
+cd DUCA
 ```
 
 ##### Compile & Run & Debug
