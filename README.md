@@ -15,7 +15,9 @@ possible.
 
 #### Prerequisites
 
-PHP
+PHP v5.6+ <br />
+Docker <br />
+Composer
 
 ## Development
 
@@ -28,9 +30,16 @@ git clone --recursive https://github.com/ParNote-App/DUCA.git
 cd DUCA
 ```
 
-##### Compile & Run & Debug
+##### Install Dependencies:
 
 ```bash
+composer install
+```
+
+##### Run With Docker:
+
+```bash
+docker-compose up
 ```
 
 ## Contributing
