@@ -3,14 +3,14 @@ version: '3'
 services:
   php-fpm:
     build:
-      context: ./docker/php-fpm
+      context: ./duca/docker/php-fpm
     volumes:
       - .:/var/www/html
     user: 1000:1000
 
   node:
     build:
-      context: ./docker/node
+      context: ./duca/docker/node
     volumes:
       - .:/var/www
     user: 1000:1000
@@ -19,12 +19,12 @@ services:
 
   nginx:
     build:
-      context: ./docker/nginx
+      context: ./duca/docker/nginx
     volumes:
       - .:/var/www/html
-      - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf
-      - ./docker/nginx/sites/:/etc/nginx/sites-available
-      - ./docker/nginx/conf.d/:/etc/nginx/conf.d
+      - ./duca/docker/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./duca/docker/nginx/sites/:/etc/nginx/sites-available
+      - ./duca/docker/nginx/conf.d/:/etc/nginx/conf.d
     depends_on:
       - php-fpm
       - node

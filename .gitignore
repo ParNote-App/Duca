@@ -7,8 +7,6 @@
 .settings
 *.tmproj
 build
-.idea
-.idea/
 nbproject/
 .vscode
 
@@ -18,4 +16,8 @@ desktop.ini
 
 .directory
 
-config.json
+config/config.json
+duca/vendor/
+assets/*
+!assets/.gitkeep
+.idea
