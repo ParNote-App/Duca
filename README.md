@@ -1,3 +1,4 @@
+<p align="center"><img height="100" src="https://i.ibb.co/0JMxhv5/Logo.png" alt="DUCA logo"></p>
 <p align="center">
   A portfolio PHP script.
 </p>
