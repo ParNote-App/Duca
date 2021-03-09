@@ -9,6 +9,6 @@ global $config;
     <meta content="width=device-width,initial-scale=1" name="viewport"/>
 
     <title></title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
 </head>
 <body>
