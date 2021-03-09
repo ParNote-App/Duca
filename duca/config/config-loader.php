@@ -2,7 +2,7 @@
 
 global $configVersion, $config;
 
-$configVersion = 1;
+$configVersion = 2;
 
 $config = array();
 $configFilePath = DUCA_ROOT . '/config/config.json';
