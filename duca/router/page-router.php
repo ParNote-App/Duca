@@ -2,7 +2,7 @@
 
 function route_this_page_router($uri)
 {
-    if (strpos($uri, '/') !== 0) {
+    if (strpos($uri, '/') !== 0 || strpos($uri, "/template/") === 0) {
         return false;
     }
 
