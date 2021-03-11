@@ -10,7 +10,6 @@ function read_file($path)
 
     header('Content-Disposition: inline; filename="' . basename($path) . '"');
 
-    ob_clean();
     flush();
     readfile($path);
     die();
