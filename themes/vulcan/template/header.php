@@ -1,3 +1,7 @@
+<?php
+global $config;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +17,6 @@
     />
     <link rel="stylesheet" href="/assets/css/style.css"/>
 
-    <title>Nedim Can Ulusoy - Software Developer</title>
+    <title><?= $config['tab-title'] ?></title>
 </head>
 <body>
