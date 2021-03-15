@@ -1,0 +1,79 @@
+$font-family-Source: "Source Code Pro", monospace;
+$bgDark: #262626;
+$borderPrimary: #e9967a solid 3px;
+$primaryColor: #e9967a;
+$secondaryBorder: #e9967a solid 2px;
+$btnHover: #fa8072;
+
+body {
+  background-color: $bgDark;
+}
+
+.myImage {
+  border-radius: 20%;
+  border: $borderPrimary;
+}
+
+.navText {
+  color: $primaryColor;
+}
+
+.navText:hover {
+  color: #fa513e;
+  transition: 1s;
+}
+
+.btnPersonal {
+  color: #fff;
+  border: $secondaryBorder;
+  background: $bgDark;
+}
+
+.btnPersonal:hover {
+  color: $btnHover;
+  transition: 1s;
+  background-color: #404040;
+}
+
+.imgFeature {
+  border-bottom: $secondaryBorder;
+}
+
+.imgFeature:hover {
+  transition: 0.5s;
+  opacity: 0.3;
+  font-size: 120%;
+}
+
+.footerText {
+  color: $primaryColor;
+}
+
+.footerText:hover {
+  color: #fa513e;
+  transition: 1s;
+  text-decoration: none;
+}
+
+hr.solid {
+  border: $primaryColor 1px solid;
+}
+
+// @media (max-width: 414px) {
+//     .myImage,
+//     .infoTag,
+//     .btnTag,
+//     .sclTag {
+//       display: none;
+//     }
+// }
+
+.headerProject a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.headerProject a:hover {
+  color: $primaryColor;
+  transition: 1s;
+}

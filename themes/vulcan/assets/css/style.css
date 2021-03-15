@@ -1,0 +1,70 @@
+body {
+    background-color: #262626;
+}
+
+.myImage {
+    border-radius: 20%;
+    border: #e9967a solid 3px;
+}
+
+.navText {
+    color: #e9967a;
+}
+
+.navText:hover {
+    color: #fa513e;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.btnPersonal {
+    color: #fff;
+    border: #e9967a solid 2px;
+    background: #262626;
+}
+
+.btnPersonal:hover {
+    color: #fa8072;
+    -webkit-transition: 1s;
+    transition: 1s;
+    background-color: #404040;
+}
+
+.imgFeature {
+    border-bottom: #e9967a solid 2px;
+}
+
+.imgFeature:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 0.3;
+    font-size: 120%;
+}
+
+.footerText {
+    color: #e9967a;
+}
+
+.footerText:hover {
+    color: #fa513e;
+    -webkit-transition: 1s;
+    transition: 1s;
+    text-decoration: none;
+}
+
+hr.solid {
+    border: #e9967a 1px solid;
+}
+
+.headerProject a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.headerProject a:hover {
+    color: #e9967a;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+/*# sourceMappingURL=style2.css.map */
