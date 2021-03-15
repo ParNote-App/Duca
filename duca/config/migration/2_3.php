@@ -9,7 +9,7 @@ function migrationHandler_2_3()
     $config['name-surname'] = "Michael Stonebridge";
     $config['welcome-text'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!";
     $config['user-mail'] = "michaelstonebridge@mail.com";
-    $config['name-surname'] = "Michael Stonebridge";
+    $config['tab-title'] = "Michael Stonebridge - Software Developer";
     $config['facebook-address'] = "facebook.com";
     $config['github-address'] = "github.com";
     $config['linkedin-address'] = "linkedin.com";
@@ -84,5 +84,9 @@ function migrationHandler_2_3()
     $config['cv'] = [
         "url" => "cvwebsite.com/cv.pdf"
     ];
+
+    $config['404-tag'] = "404!";
+
+    $config['404-error'] = "This is not the web page you are looking for.";
 
 }
