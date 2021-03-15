@@ -2,8 +2,6 @@
 
 function read_file($path)
 {
-    $result = new finfo(FILEINFO_MIME_TYPE);
-
     $mimes = new \Mimey\MimeTypes;
 
     header('Content-Type: ' . $mimes->getMimeType(explode(".", $path)[1]));
