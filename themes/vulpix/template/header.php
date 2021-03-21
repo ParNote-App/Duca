@@ -14,5 +14,5 @@ global $config;
 
     <link rel="stylesheet" href="/assets/css/style.css"/>
 
-    <title>Arda Burak Atila</title>
+    <title><?=$config ["site-title"] ?></title>
 </head>

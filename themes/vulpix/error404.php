@@ -9,5 +9,4 @@ include 'template/header.php'
 </div>
 
 
-<?php include 'template/footer.php';
 
