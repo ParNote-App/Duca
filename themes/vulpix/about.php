@@ -32,7 +32,8 @@ include 'template/header.php'
 
             <div class="card">
                 <div class="card-header">
-                    Quote
+                    <?= $config["name-surname"] ?>
+
                 </div>
                 <div class="card-body">
                     <blockquote class="blockquote mb-0">
@@ -46,7 +47,7 @@ include 'template/header.php'
                             <a href="mailto:<?php echo $config["email"] ?>">
                                 <button type="button" class="btn btnPersonal">Contact</button>
                             </a>
-                           
+
 
                         </nav>
                     </blockquote>
