@@ -10,7 +10,7 @@ include 'template/header.php'
         </div>
     </div>
 
-    <main class="text-white bgDark flex-fill">
+    <main class="navText bgDark flex-fill">
         <div class="d-flex flex-column mt-5">
             <h1 class="display-1 d-flex justify-content-center mt-5 pt-5"><?= $config["404-tag"] ?></h1>
             <h3 class="display-4 text-center mt-3 px-2">
