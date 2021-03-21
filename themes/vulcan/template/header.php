@@ -20,3 +20,5 @@ global $config;
     <title><?= $config['site-title'] ?></title>
 </head>
 <body>
+
+<div class="d-flex flex-column min-vh-100">
