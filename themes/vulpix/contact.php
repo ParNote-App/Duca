@@ -23,15 +23,17 @@ include 'template/header.php'
                 <a class="nav-link" href="/about">About</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
                     Form
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                    <a class="dropdown-item" href=mailto:<?php echo $config["user-mail"] ?>">
+                    <a class="dropdown-item" href=mailto:<?php echo $config["email"] ?>">
                         <button type="button" class="btn btnPersonal">
                             Contact
-                        </button></a>
+                        </button>
+                    </a>
 
                     <div class="col-auto">
                         <?php if (isset($config['cv'])) { ?>

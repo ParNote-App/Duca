@@ -25,7 +25,7 @@ include 'template/header.php'
 
                     <div class="flex-sm-column infoTag">
                         <h3 class="text-center mt-4"><?= $config["name-surname"] ?></h3>
-                        <h5 class="text-center pt-2"><?= $config["job-title"] ?></h5>
+                        <h5 class="text-center pt-2"><?= $config["profession"] ?></h5>
                     </div>
 
                     <div class="d-flex justify-content-center align-content-center mt-4">
@@ -39,7 +39,7 @@ include 'template/header.php'
                         }
                         ?>
                         <div class="col-6">
-                            <a href="mailto:<?php echo $config["user-mail"] ?>">
+                            <a href="mailto:<?php echo $config["email"] ?>">
                                 <button type="button" class="btn btnPersonal">
                                     Contact
                                 </button>
@@ -58,7 +58,7 @@ include 'template/header.php'
                             <h4>About me</h4>
                             <hr class="solid"/>
                             <p>
-                                <?= $config["description"] ?>
+                                <?= $config["about-me"] ?>
                             </p>
                         </div>
                         <div class="headerInterest">
@@ -116,7 +116,7 @@ include 'template/header.php'
                                         ᐅ <?= $project['title'] ?>:
                                     </a>
 
-                                    <?= $project['description'] ?>
+                                    <?= $project['about-me'] ?>
                                 </p>
 
                                 <?php

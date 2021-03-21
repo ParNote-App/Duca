@@ -21,15 +21,17 @@ include 'template/header.php'
                 <a class="nav-link" href="/about">About</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
                     Form
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                    <a class="dropdown-item" href=mailto:<?php echo $config["user-mail"] ?>">
+                    <a class="dropdown-item" href=mailto:<?php echo $config["email"] ?>">
                         <button type="button" class="btn btnPersonal">
                             Contact
-                        </button></a>
+                        </button>
+                    </a>
 
                     <div class="col-auto">
                         <?php if (isset($config['cv'])) { ?>
@@ -59,27 +61,29 @@ include 'template/header.php'
 
 <br>
 
-<br>
+    <br>
 
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="https://media-exp1.licdn.com/dms/image/C4E03AQHTgRq2Qx8VsA/profile-displayphoto-shrink_800_800/0/1603622188305?e=1621468800&v=beta&t=3PcOR5MQlrmAMThH0TD5TtE91HUOmEOhTYUto3cQadY" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title"><?= $config["name-surname"] ?></h4>
-                    <h5 class="card-title"><?= $config["job-title"] ?></h5>
-                    <p class="card-text"><?= $config["welcome-text"] ?> <?= $config["welcome-text"] ?><?= $config["welcome-text"] ?></p>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                </ul>
-                <div class="card-body">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top"
+                         src="https://media-exp1.licdn.com/dms/image/C4E03AQHTgRq2Qx8VsA/profile-displayphoto-shrink_800_800/0/1603622188305?e=1621468800&v=beta&t=3PcOR5MQlrmAMThH0TD5TtE91HUOmEOhTYUto3cQadY"
+                         alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title"><?= $config["name-surname"] ?></h4>
+                        <h5 class="card-title"><?= $config["profession"] ?></h5>
+                        <p class="card-text"><?= $config["intro-text"] ?> <?= $config["intro-text"] ?><?= $config["intro-text"] ?></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                    <div class="card-body">
 
-                    <div class="col-auto">
-                        <?php if (isset($config['cv'])) { ?>
+                        <div class="col-auto">
+                            <?php if (isset($config['cv'])) { ?>
                             <div class="col-6">
                                 <a href="<? $config['cv']['url'] ?>" target="_blank">
                                     card-link
@@ -154,17 +158,18 @@ include 'template/header.php'
                     </div>
                     <div class="card-body">
                         <blockquote class="blockquote mb-0">
-                            <p><?= $config["welcome-text"] ?></p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title"></cite></footer>
+                            <p><?= $config["intro-text"] ?></p>
+                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title"></cite>
+                            </footer>
                         </blockquote>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
-                <div class="card-header">Project</div>
-                <div class="card-body">
+            <div class="col">
+                <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Project</div>
+                    <div class="card-body">
                     <?php
                     foreach ($config["projects"] as $project) {
                         ?>
@@ -175,34 +180,34 @@ include 'template/header.php'
                             ᐅ <?= $project['title'] ?>:
                         </a>
 
-                        <?= $project['description'] ?>
+                        <?= $project['about-me'] ?>
 
 
                         <?php
                     }
                     ?>
 
+                    </div>
                 </div>
-            </div>
-            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                <div class="card-header">Education</div>
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text"><?= $config["welcome-text"] ?></p>
+                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Education</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text"><?= $config["intro-text"] ?></p>
+                    </div>
                 </div>
-            </div>
-            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-                <div class="card-header">Experience</div>
-                <div class="card-body">
-                    <h5 class="card-title"><?= $config["job-title"] ?></h5>
-                    <p class="card-text"><?= $config["welcome-text"] ?></p>
+                <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Experience</div>
+                    <div class="card-body">
+                        <h5 class="card-title"><?= $config["profession"] ?></h5>
+                        <p class="card-text"><?= $config["intro-text"] ?></p>
+                    </div>
                 </div>
-            </div>
 
 
+            </div>
         </div>
     </div>
-</div>
 
 
     <!-- Optional JavaScript -->

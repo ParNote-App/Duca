@@ -22,14 +22,16 @@ include 'template/header.php'
                 <a class="nav-link" href="/about">About</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
                     Form
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href=mailto:<?php echo $config["user-mail"] ?>">
+                    <a class="dropdown-item" href=mailto:<?php echo $config["email"] ?>">
                         <button type="button" class="btn btnPersonal">
                             Contact
-                        </button></a>
+                        </button>
+                    </a>
 
                     <div class="col-auto">
                         <?php if (isset($config['cv'])) { ?>
@@ -65,7 +67,7 @@ include 'template/header.php'
     <div class="row">
         <div class="col">
             <div class="card" style="width: 18rem;">
-                <p><?=$config['description'] ?><?=$config['description'] ?></p>
+                <p><?= $config['about-me'] ?><?= $config['about-me'] ?></p>
 
             </div>
         </div>
@@ -75,7 +77,8 @@ include 'template/header.php'
 
         <div class="col-6">
             <div class="text-center">
-                <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHTgRq2Qx8VsA/profile-displayphoto-shrink_800_800/0/1603622188305?e=1621468800&v=beta&t=3PcOR5MQlrmAMThH0TD5TtE91HUOmEOhTYUto3cQadY" class="rounded" alt="...">
+                <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHTgRq2Qx8VsA/profile-displayphoto-shrink_800_800/0/1603622188305?e=1621468800&v=beta&t=3PcOR5MQlrmAMThH0TD5TtE91HUOmEOhTYUto3cQadY"
+                     class="rounded" alt="...">
             </div>
 
             <br>
@@ -110,7 +113,7 @@ include 'template/header.php'
 
                 <?php
                 foreach ($config["projects"] as $project) {
-                 ?>
+                    ?>
 
                     <a
                             href="<?= $project['link'] ?>"
@@ -118,32 +121,31 @@ include 'template/header.php'
                         ᐅ <?= $project['title'] ?>:
                     </a>
 
-                    <?= $project['description'] ?>
+                    <?= $project['about-me'] ?>
 
 
-                <?php
+                    <?php
                 }
                 ?>
-            </div>
-
-            <div class="card border-success mb-3" style="max-width: 18rem;">
-                <div class="card-header">Experience</div>
-                <div class="card-body text-success">
-
-                    <h5 class="card-title"><?= $config["job-title"] ?></h5>
-                    <p class="card-text"><?= $config["welcome-text"] ?></p>
                 </div>
+
+                <div class="card border-success mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Experience</div>
+                    <div class="card-body text-success">
+
+                        <h5 class="card-title"><?= $config["profession"] ?></h5>
+                        <p class="card-text"><?= $config["about-me"] ?></p>
+                    </div>
+                </div>
+
+
             </div>
-
-
         </div>
+
     </div>
 
-</div>
 
-
-
-<!-- Optional JavaScript -->
+    <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

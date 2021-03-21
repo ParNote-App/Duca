@@ -17,6 +17,6 @@ global $config;
     />
     <link rel="stylesheet" href="/assets/css/style.css"/>
 
-    <title><?= $config['tab-title'] ?></title>
+    <title><?= $config['site-title'] ?></title>
 </head>
 <body>
