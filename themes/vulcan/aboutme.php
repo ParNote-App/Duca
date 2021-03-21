@@ -116,7 +116,7 @@ include 'template/header.php'
                                         ᐅ <?= $project['title'] ?>:
                                     </a>
 
-                                    <?= $project['about-me'] ?>
+                                    <?= $project['description'] ?>
                                 </p>
 
                                 <?php
