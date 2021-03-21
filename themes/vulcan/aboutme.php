@@ -17,7 +17,7 @@ include 'template/header.php'
                         class="col-sm-4 d-flex flex-column align-items-center align-items-sm-start pt-1"
                 >
                     <img
-                            src="assets/img/user.jpg"
+                            src="<?= $config["photo-url"] ?>"
                             class="text-center myImage borderPrimary"
                             width="230"
                             height="215"
