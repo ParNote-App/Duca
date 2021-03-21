@@ -3,7 +3,6 @@ global $config;
 include 'template/header.php'
 ?>
 
-    <div class="d-flex flex-column min-vh-100">
     <div class="navbar navbar-expand-sm">
         <div class="container-fluid d-flex justify-content-sm-end">
             <a href="/" class="nav-link navText">Home</a>
@@ -13,38 +12,32 @@ include 'template/header.php'
     <main class="text-white bgDark flex-fill">
         <div class="container">
             <div class="row">
-                <div
-                        class="col-sm-4 d-flex flex-column align-items-center align-items-sm-start pt-1"
-                >
+                <div class="col-sm-4 d-flex flex-column align-items-center pt-1">
                     <img
                             src="<?= $config["photo-url"] ?>"
-                            class="text-center myImage borderPrimary"
-                            width="230"
-                            height="215"
+                            class=myImage borderPrimary"
+                    width="230"
+                    height="215"
                     />
 
-                    <div class="flex-sm-column infoTag">
+                    <div class="flex-sm-column">
                         <h3 class="text-center mt-4"><?= $config["name-surname"] ?></h3>
-                        <h5 class="text-center pt-2"><?= $config["profession"] ?></h5>
+                        <h5 class="text-center mt-2"><?= $config["profession"] ?></h5>
                     </div>
 
-                    <div class="d-flex justify-content-center align-content-center mt-4">
+                    <div class="d-flex align-content-center mt-4">
                         <?php if (isset($config['cv'])) { ?>
-                            <div class="col-6">
-                                <a href="<? $config['cv']['url'] ?>" target="_blank">
-                                    <button type="button" class="btn btnPersonal">CV</button>
-                                </a>
-                            </div>
+                            <a href="<? $config['cv']['url'] ?>" target="_blank">
+                                <button type="button" class="btn btnPersonal">CV</button>
+                            </a>
                             <?php
                         }
                         ?>
-                        <div class="col-6">
-                            <a href="mailto:<?php echo $config["email"] ?>">
-                                <button type="button" class="btn btnPersonal">
-                                    Contact
-                                </button>
-                            </a>
-                        </div>
+                        <a class="ml-4" href="mailto:<?php echo $config["email"] ?>">
+                            <button type="button" class="btn btnPersonal">
+                                Contact
+                            </button>
+                        </a>
                     </div>
 
                     <div class="d-flex justify-content-between mt-4 mb-3">
