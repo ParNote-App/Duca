@@ -4,7 +4,6 @@ function migrationHandler_2_3()
 {
     global $config;
 
-    //Index page
     $config['config-version'] = 3;
     $config['name-surname'] = "Michael Stonebridge";
     $config['welcome-text'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!";
@@ -13,11 +12,10 @@ function migrationHandler_2_3()
     $config['facebook-address'] = "facebook.com";
     $config['github-address'] = "github.com";
     $config['linkedin-address'] = "linkedin.com";
-    $config['github-address-of-this-website'] = "githubrepo.com";
+    $config['github-address-of-this-website'] = "https://github.com/ParNote-App/DUCA";
     $config["product-year-and-name-surname"] = "2021 Michael Stonebridge";
     $config['job-title'] = "Software Developer";
     $config['description'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-
 
     $config['interests'] = [
         [
@@ -82,7 +80,7 @@ function migrationHandler_2_3()
     ];
 
     $config['cv'] = [
-        "url" => "cvwebsite.com/cv.pdf"
+        "url" => "/assets/cv.pdf"
     ];
 
     $config['404-tag'] = "404!";

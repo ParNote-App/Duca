@@ -16,6 +16,14 @@ function migrateConfig()
         require_once 'migration/2_3.php';
 
         migrationHandler_2_3();
+    } else if ($config['config-version'] === 3) { // from version 3 to 4
+        require_once 'migration/3_4.php';
+
+        migrationHandler_3_4();
+    } else if ($config['config-version'] === 4) { // from version 4 to 5
+        require_once 'migration/4_5.php';
+
+        migrationHandler_4_5();
     }
 
     if ($config['config-version'] !== $configVersion) {

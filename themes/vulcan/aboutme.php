@@ -17,7 +17,7 @@ include 'template/header.php'
                         class="col-sm-4 d-flex flex-column align-items-center align-items-sm-start pt-1"
                 >
                     <img
-                            src="assets/img/user.jpg"
+                            src="<?= $config["photo-url"] ?>"
                             class="text-center myImage borderPrimary"
                             width="230"
                             height="215"
@@ -25,7 +25,7 @@ include 'template/header.php'
 
                     <div class="flex-sm-column infoTag">
                         <h3 class="text-center mt-4"><?= $config["name-surname"] ?></h3>
-                        <h5 class="text-center pt-2"><?= $config["job-title"] ?></h5>
+                        <h5 class="text-center pt-2"><?= $config["profession"] ?></h5>
                     </div>
 
                     <div class="d-flex justify-content-center align-content-center mt-4">
@@ -39,7 +39,7 @@ include 'template/header.php'
                         }
                         ?>
                         <div class="col-6">
-                            <a href="mailto:<?php echo $config["user-mail"] ?>">
+                            <a href="mailto:<?php echo $config["email"] ?>">
                                 <button type="button" class="btn btnPersonal">
                                     Contact
                                 </button>
@@ -58,7 +58,7 @@ include 'template/header.php'
                             <h4>About me</h4>
                             <hr class="solid"/>
                             <p>
-                                <?= $config["description"] ?>
+                                <?= $config["about-me"] ?>
                             </p>
                         </div>
                         <div class="headerInterest">

@@ -5,12 +5,12 @@ global $config;
 <footer>
     <div class="container d-flex mt-3">
         <a
-                href=<?= $config["github-address-of-this-website"] ?>
+                href=<?= $config["repo"] ?>
                 target="_blank"
                 class="footerText"
         >This Website</a
         >
-        <p class="ml-auto text-white">© <?= $config["product-year-and-name-surname"] ?></p>
+        <p class="ml-auto text-white">© <?= $config["copyright"] ?></p>
     </div>
 </footer>
 </div>
