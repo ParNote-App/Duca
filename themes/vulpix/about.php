@@ -38,15 +38,15 @@ include 'template/header.php'
                     <blockquote class="blockquote mb-0">
                         <p><?= $config["intro-text"] ?></p>
                         <nav class="nav nav-pills nav-justified">
+                            <div class="col-auto">
+                                <a href="/index">
+                                    <button type="button" class="btn btnPersonal">Home Page</button>
+                                </a>
+                            </div>
                             <a href="mailto:<?php echo $config["email"] ?>">
                                 <button type="button" class="btn btnPersonal">Contact</button>
                             </a>
-                            <div class="col-auto">
-                                <a href="/about">
-                                    <button type="button" class="btn btnPersonal">About</button>
-                                </a>
-                            </div>
-
+                           
 
                         </nav>
                     </blockquote>

@@ -76,15 +76,17 @@ include 'template/header.php'
                         <div class="card-body">
                             <blockquote class="blockquote mb-0">
                                 <p><?= $config["intro-text"] ?></p>
+
                                 <nav class="nav nav-pills nav-justified">
-                                    <a href="mailto:<?php echo $config["email"] ?>">
-                                        <button type="button" class="btn btnPersonal">Contact</button>
-                                    </a>
                                     <div class="col-auto">
                                         <a href="/about">
                                             <button type="button" class="btn btnPersonal">About</button>
                                         </a>
                                     </div>
+
+                                    <a href="mailto:<?php echo $config["email"] ?>">
+                                        <button type="button" class="btn btnPersonal">Contact</button>
+                                    </a>
 
 
                                 </nav>
@@ -133,6 +135,6 @@ include 'template/header.php'
     <br>
     <br>
     <br>
-<br>
+    <br>
 
 <?php include 'template/footer.php';
