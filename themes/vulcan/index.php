@@ -13,7 +13,7 @@ include 'template/header.php'
     <main class="text-white bgDark flex-fill">
         <div class="container d-flex justify-content-center mt-4">
             <img
-                    src="assets/img/user.jpg"
+                    src="<?= $config["photo-url"] ?>"
                     class="myImage borderPrimary"
                     width="230"
                     height="215"
