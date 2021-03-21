@@ -6,21 +6,21 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit29442c59b3ac49b2df3f91dc7d2feb10
 {
-    public static $prefixLengthsPsr4 = array(
-        'M' =>
-            array(
-                'Mimey\\' => 6,
-            ),
+    public static $prefixLengthsPsr4 = array (
+        'M' => 
+        array (
+            'Mimey\\' => 6,
+        ),
     );
 
-    public static $prefixDirsPsr4 = array(
-        'Mimey\\' =>
-            array(
-                0 => __DIR__ . '/..' . '/ralouphie/mimey/src',
-            ),
+    public static $prefixDirsPsr4 = array (
+        'Mimey\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ralouphie/mimey/src',
+        ),
     );
 
-    public static $classMap = array(
+    public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 

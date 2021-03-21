@@ -2,6 +2,10 @@
 global $config;
 ?>
 
+<div class="footer">&copy; All rights reserved.</div>
+    <div class="bottom-grid"></div>
+
+
 <script defer src="/assets/js/popper.min.js"></script>
 <script defer src="/assets/js/bootstrap.min.js"></script>
 <?php
