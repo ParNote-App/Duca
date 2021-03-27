@@ -22,7 +22,7 @@ include 'template/header.php'
         <div class="line3"></div>
       </div>
     </nav>
-    <script src="app.js"></script>
+    <script src="assets/js/app.js"></script>
     <div class="cv">
       <a
         target="_blank"
