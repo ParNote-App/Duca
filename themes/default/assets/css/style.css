@@ -172,3 +172,11 @@ nav {
 img{
   margin-bottom: 7px;
 }
+
+.text-center{
+  text-align: center;
+}
+
+.error404 {
+  font-size: 36px;
+}
