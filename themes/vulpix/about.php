@@ -68,7 +68,7 @@ include 'template/header.php'
                         <a
                                 href="<?= $project['link'] ?>"
                                 target="_blank">
-                            ᐅ <?= $project['title'] ?>:
+                            <br><?= $project['title'] ?>:
                         </a>
 
                         <?= $project['description'] ?>

@@ -2,11 +2,9 @@
 global $config;
 include 'template/header.php'
 ?>
-<div style="background: red">
 
-    <h1>Error404</h1>
 
+<div class="text-center error404">
+    <h1>Error 404</h1>
 </div>
-
-
 
