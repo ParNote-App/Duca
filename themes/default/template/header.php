@@ -25,7 +25,11 @@ global $config;
     <ul class="nav-links">
         <li><a href="/">Home</a></li>
         <li><a href="/projects">Projects</a></li>
-        <li><a href="cv.html">CV</a></li>
+        <?php if (isset($config['cv'])) { ?>
+            <li><a href="<?= $config['cv']['url'] ?>">CV</a></li>
+            <?php
+        }
+        ?>
     </ul>
     <div class="burger">
         <div class="line1"></div>

@@ -2,7 +2,7 @@
 global $config;
 ?>
 
-<div class="footer">&copy; All rights reserved. </div>
+<div class="footer">&copy; <?= $config["copyright"]?></div>
 
 <script defer src="/assets/js/app.js"></script>
 <?php
