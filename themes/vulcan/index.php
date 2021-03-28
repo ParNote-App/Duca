@@ -3,7 +3,7 @@ global $config;
 include 'template/header.php'
 ?>
 
-    <main class="text-white bgDark flex-fill d-flex">
+    <main class="text-white bgDark flex-fill d-flex pt-4">
         <div class="container align-self-center">
             <div class="d-flex justify-content-center">
                 <img
@@ -15,7 +15,7 @@ include 'template/header.php'
             </div>
 
             <div class="d-flex flex-column mt-4">
-                <h1 class="d-flex justify-content-center pt-2"><?= $config["name-surname"] ?></h1>
+                <h1 class="d-flex justify-content-center pt-2 text-center"><?= $config["name-surname"] ?></h1>
                 <h3 class="text-center mt-2 px-2">
                     <small><?= $config["intro-text"] ?></small>
                 </h3>

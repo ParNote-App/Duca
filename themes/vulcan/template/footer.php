@@ -3,7 +3,7 @@ global $config;
 ?>
 
 <footer>
-    <div class="container d-flex">
+    <div class="container d-flex pt-4">
         <a
                 href=<?= $config["repo"] ?>
                 target="_blank"
