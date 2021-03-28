@@ -2,7 +2,6 @@
 global $config
     ?>
 
-
 <?php
 if ($config["live-reload"]) { ?>
     <script>
