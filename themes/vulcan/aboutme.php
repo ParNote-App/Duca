@@ -27,7 +27,7 @@ include 'template/header.php'
 
                     <div class="d-flex align-content-center mt-4">
                         <?php if (isset($config['cv'])) { ?>
-                            <a href="<? $config['cv']['url'] ?>" target="_blank">
+                            <a href="<?= $config['cv']['url'] ?>" target="_blank">
                                 <button type="button" class="btn btnPersonal">CV</button>
                             </a>
                             <?php
