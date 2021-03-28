@@ -65,17 +65,17 @@ function migrationHandler_2_3()
     $config['social-links'] = [
         [
             'url' => "facebook.com",
-            'image-url' => "/assets/img/Facebook_2.png"
+            'image-url' => "/assets/img/Facebook.png"
         ],
 
         [
             'url' => "github.com",
-            'image-url' => "/assets/img/Github_2.png"
+            'image-url' => "/assets/img/GitHub.png"
         ],
 
         [
             'url' => "linkedin.com",
-            'image-url' => "/assets/img/Linkedin_2.png"
+            'image-url' => "/assets/img/LinkedIn.png"
         ]
     ];
 
