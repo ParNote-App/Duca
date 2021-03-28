@@ -31,7 +31,7 @@ include 'template/header.php'
                     <div class="col-auto">
                         <?php if (isset($config['cv'])) { ?>
                             <div class="col-6">
-                                <a href="<? $config['cv']['url'] ?>" target="_blank">
+                                <a href="<?= $config['cv']['url'] ?>" target="_blank">
                                     <button type="button" class="btn btnPersonal">CV</button>
                                 </a>
                             </div>
