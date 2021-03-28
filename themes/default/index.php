@@ -20,7 +20,7 @@ include 'template/header.php'
             ?>
             <li>
                 <a target="_blank" href="<?= $link["url"] ?>"
-                ><img src="<?= $link["image-url"] ?>"/></a>
+                ><img src="<?= $link["image-url"] ?>" width="64"/></a>
             </li>
             <?php
         }
