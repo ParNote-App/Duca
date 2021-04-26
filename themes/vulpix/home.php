@@ -13,7 +13,7 @@ include 'template/header.php'
                     <div class="col-12 col-lg-3">
                         <div class="card mb-4">
                             <img class="card-img-top"
-                                 src="https://www.w3schools.com/howto/img_avatar.png"
+                                 src="<?= $config["photo-url"] ?>"
                                  alt="Card image cap">
                             <div class="card-body">
                                 <h4 class="card-title"><?= $config["name-surname"] ?></h4>
